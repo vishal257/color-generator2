@@ -1,0 +1,78 @@
+#root{
+  --newColor: white;
+}
+
+
+.main-container{
+  position: relative;
+  display: flex;
+  width: 100dvw;
+  height: 100dvh;
+  place-items: center;
+}
+
+.left-wrapper{
+  flex-basis: 40%;
+}
+
+.heading{
+  display: grid;
+  place-content: center;
+}
+
+h1{
+  display: inline-block;
+  width: 200px;
+  padding-right: 200px;
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 6rem;
+}
+
+.right-wrapper{
+  flex-basis: 60%;
+  border-left: solid 2px black;
+}
+
+.circle{
+  margin: auto;
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  border: solid 120px;
+  cursor: pointer;
+}
+
+.buttons{
+  display: flex;
+  place-content: center;
+  width: 100%;
+  gap: 50px;
+  padding-left: 20px;
+}
+
+#newColor, #copyButton{
+  padding: 1.5rem 3rem;
+  border-radius: 100px;
+  font-size: 1.2rem;
+  background-color: #E0E3E4;
+  font-weight: 600;
+  color: #090A0B;
+}
+
+#copyButton{
+  background-color: transparent;
+  color: #E0E3E4;
+}
+
+.cursor{
+  border-radius: 100%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 999;
+  mix-blend-mode: difference;
+  color:black;
+  display: grid;
+  font-size: 1.5rem;
+  place-items: center;
+}
